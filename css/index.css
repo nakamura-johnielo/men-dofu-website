@@ -1,0 +1,198 @@
+/**/
+
+:root {
+  --rollLength: 4000px;
+}
+
+body {
+  /* font-family: "nikkyou-sans"; */
+
+  background: #1c191b;
+  margin: 0;
+  color: white;
+  text-align: center;
+  /*	box-sizing: border-box;
+	border-style: solid;
+	border-width: 0px 20px 0px 20px;
+	border-color: black;*/
+}
+
+/* vvv section  */
+.page-section {
+  width: 100%;
+  height: 100vh;
+}
+
+.page-section-container {
+  width: 100%;
+  height: 100%;
+}
+/* ^^^ section  */
+
+/*  vv hero */
+.hero {
+  background-image: url("../img/heroBG.png"); /* 背景画像を指定 */
+  background-size: cover; /* 画像をカバーするように設定 */
+  background-position: center; /* 画像を中央に配置 */
+  background-repeat: no-repeat; /* 繰り返しを無効化 */
+}
+
+.letter-shadow-hero {
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+}
+
+/* ^^^ hero */
+
+/* vvv 2nd section */
+.h-70vh {
+  height: 70vh;
+}
+
+.description-behaivor {
+  word-wrap: break-word; /* 古い仕様に対応 */
+  word-break: break-word; /* 最新仕様のサポート */
+  overflow-wrap: break-word; /* 推奨される最新のプロパティ */
+  max-width: 100%;
+  max-height: 100%; /* 親要素の幅を超えないようにする */
+  overflow: hidden; /* はみ出た部分を隠す（必要に応じて） */
+  white-space: normal; /* デフォルトで折り返す動作に戻す */
+}
+.no-wrap {
+  white-space: nowrap;
+}
+
+.test {
+  padding-right: 50px;
+}
+.test2 {
+  background-color: rgb(215, 138, 29);
+}
+/* ^^^ second section */
+
+/* 3rd section */
+
+.bg-img3 {
+  position: relative;
+  background-image: url("../img/bg3.jpeg"); /* 背景画像を指定 */
+  background-size: cover; /* 画像をカバーするように設定 */
+  background-position: center; /* 画像を中央に配置 */
+  background-repeat: no-repeat; /* 繰り返しを無効化 */
+}
+.bg-img3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* ここで透明度を調整 */
+  z-index: 1;
+}
+
+.z-2 {
+  position: relative;
+  z-index: 2;
+}
+/* ^^^ 3rd section */
+
+.box {
+  height: 100px;
+  font-size: x-large;
+  border: 3px solid black;
+}
+
+#this {
+  height: 100vh;
+  background-color: #1c191b;
+  position: sticky;
+  top: 0;
+  /* border: 1px solid white; */
+}
+
+.this-inner-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+}
+
+.thiscontainer {
+  height: var(--rollLength);
+  background-color: green;
+}
+
+.center {
+  display: flex;
+  justify-content: center; /* 水平方向に中央揃え */
+  align-items: center; /* 垂直方向に中央揃え */
+}
+.centertop {
+  display: flex;
+  justify-content: center; /* 水平方向に中央揃え */
+  align-items: flex-start; /* 垂直方向に中央揃え */
+  gap: 17px;
+}
+
+.vtext {
+  writing-mode: vertical-rl; /* 縦書きモードを設定 */
+  text-orientation: upright; /* 文字を正立させる */
+}
+
+.thisupper {
+  padding-block: 30px;
+  font-size: 30px;
+}
+
+.text-large {
+  font-size: 30px;
+}
+
+/* .sec0 {
+  width: 100%;
+  height: 100%;
+} */
+
+/* menu type */
+.menu-item {
+  height: 68%;
+  /* border: 1px solid white; */
+  position: relative;
+}
+
+.menu-div {
+  height: 98vh;
+  /* border: 1px solid white; */
+}
+
+.menu-title {
+  background-color: white;
+  color: black;
+  padding: 30px 20px;
+}
+
+.absolute {
+  position: absolute;
+  bottom: -10vh;
+  right: 30px;
+}
+
+.img {
+  height: 100%; /* 高さを親要素の100%に設定 */
+  width: auto; /* 幅は自動調整して比率を保つ */
+  object-fit: cover; /* 比率を保ちながら全体をカバー */
+}
+
+.img-cover {
+  height: 100%; /* 高さを親要素の100%に設定 */
+  width: 100%; /* 幅は自動調整して比率を保つ */
+  object-fit: cover;
+  object-position: center;
+}

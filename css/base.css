@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+:root {
+  --main-font-color: #001a4f;
+}
+
+@font-face {
+  font-family: "nikkyou-sans";
+  src: url("../fonts/nikkyou-sans-font/NikkyouSans-mLKax.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "logopixies";
+  src: url("../fonts/logopixies-font/Logopixies-owwBB.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "gyosho";
+  src: url("../fonts/hiraginoTokudai.OTF") format("opentype");
+  /* src: url("../fonts/gyosho.OTF") format("opentype");
+  src: url("../fonts/hiraginoTokudai.OTF") format("opentype"); 
+  src: url("../fonts/ROHAGOROMOSTD-BD.OTF") format("opentype"); 
+  src: url("../fonts/YUTUKIMDMIN-E.OTF") format("opentype");*/
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "gyosho", sans-serif;
+  /*  width: 100vw; */
+  /* overflow-x: hidden; */
+}
+
+#error {
+  color: red;
+}
+
+div.main {
+  background-color: rgba(255, 255, 255, 0.6);
+  margin: 40 auto;
+  padding: 18 23;
+  max-width: 750;
+  min-width: 330;
+}
+
+header {
+  margin: 0;
+  /*background-color:rgb(255,168,81);*/
+  color: white;
+  padding: 14;
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+}
+
+p#back {
+  text-align: left;
+  margin: 0 10;
+}
+p#back button {
+  width: auto;
+  height: auto;
+  margin: 0;
+}
+
+header div {
+  margin: 0 10 0;
+  text-align: left;
+}
+
+header {
+  padding-bottom: 10;
+}
