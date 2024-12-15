@@ -1,0 +1,21 @@
+<!-- menu section 100vh -->
+<section class="menu-section w-full">
+  <!-- sticky -->
+  <div class="menu-container flex h-screen">
+    <!-- 左側 -->
+    <div class="flex-1 flex"></div>
+
+    <!-- 右側 -->
+    <div class="flex-1 flex flex-center">
+      <div class="w-min">
+        <!-- name -->
+        <p class="vtext text-4xl tracking-logo">柳家面豆腐</p>
+        <!-- icon -->
+        <div class="center w-full mt-2">
+          <img src="img/icon1.png" alt="logo" class="w-full h-auto" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /menu section -->

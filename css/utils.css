@@ -694,6 +694,64 @@
   height: 83.333333%;
 }
 
+.h-1_10 {
+  height: 10%;
+}
+.h-2_10 {
+  height: 20%;
+}
+.h-3_10 {
+  height: 30%;
+}
+
+.h-4_10 {
+  height: 40%;
+}
+.h-5_10 {
+  height: 50%;
+}
+.h-6_10 {
+  height: 60%;
+}
+.h-7_10 {
+  height: 70%;
+}
+.h-8_10 {
+  height: 80%;
+}
+.h-9_10 {
+  height: 90%;
+}
+
+.w-1_10 {
+  width: 10%;
+}
+.w-2_10 {
+  width: 20%;
+}
+.w-3_10 {
+  width: 30%;
+}
+
+.w-4_10 {
+  width: 40%;
+}
+.w-5_10 {
+  width: 50%;
+}
+.w-6_10 {
+  width: 60%;
+}
+.w-7_10 {
+  width: 70%;
+}
+.w-8_10 {
+  width: 80%;
+}
+.w-9_10 {
+  width: 90%;
+}
+
 .h-full {
   height: 100%;
 }
@@ -3375,4 +3433,50 @@
 
 .absolute {
   position: absolute;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.-mb-100vh {
+  margin-bottom: -100vh;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.z-0 {
+  z-index: 0;
+}
+.z-1 {
+  z-index: 1;
+}
+.z-10 {
+  z-index: 10;
+}
+
+.px-1 {
+  padding-inline: 0.25rem;
+}
+
+.px-2px {
+  padding-inline: 0.125rem; /* 2px */
 }

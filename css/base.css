@@ -31,7 +31,10 @@
 }
 
 body {
-  font-family: "gyosho", sans-serif;
+  /* font-family: "gyosho", sans-serif; */
+  font-family: "Yuji Syuku", serif;
+  font-weight: 400;
+  font-style: normal;
   /*  width: 100vw; */
   /* overflow-x: hidden; */
 }

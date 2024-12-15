@@ -1,12 +1,89 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>アメリカ村</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>柳家面豆腐</title>
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/utils.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/index-animation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Yuji+Syuku&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <!-- menu section 100vh -->
+    <section class="z-10 fixed top-0 left-0 w-full h-screen">
+      <div class="flex w-full h-full">
+        <!-- 左側 -->
+        <div class="flex-1 flex"></div>
+
+        <!-- 右側 -->
+        <div class="flex-1 flex flex-center">
+          <div id="logo" class="w-min text-4xl tracking-logo">
+            <!-- name text-4xl-->
+            <p class="vtext">柳家面豆腐</p>
+            <!-- icon -->
+            <div id="logo-img" class="center w-full mt-2">
+              <img src="img/icon1.png" alt="logo" class="logo-img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /menu section -->
+
+    <!-- real menu section 100vh -->
+    <header
+      id="menu-bar"
+      class="opacity-0 flex flex-center z-10 fixed w-20 top-0 right-0 h-screen"
+    >
+      <!-- 線 -->
+      <div class="w-0 h-full relative flex flex-center">
+        <div class="w-0 h-9_10 divider"></div>
+      </div>
+      <!-- 中身 -->
+      <div class="w-full h-full flex flex-center">
+        <p class="vtext">もくじ</p>
+        <!-- logo -->
+        <div id="logo2" class="opacity-0 w-min text-xl tracking-widest">
+          <p class="vtext">柳家面豆腐</p>
+
+          <div
+            id="logo-img2"
+            class="flex flex-center w-full mt-1 px-2px text-center"
+          >
+            <img src="img/icon1.png" alt="logo" class="logo-img" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- /real menu section -->
+
+    <!-- real menu section 100vh 予備-->
+    <section class="flex opacity-0 z-10 fixed w-20 top-0 right-0 h-screen">
+      <!-- 線 -->
+      <div class="w-0 h-full relative flex flex-center">
+        <div class="w-0 h-9_10 divider"></div>
+      </div>
+      <div class="w-full h-full flex flex-center">
+        <!-- logo -->
+        <div id="logo2" class="w-min text-xl tracking-widest">
+          <!-- name text-4xl-->
+          <p class="vtext">柳家面豆腐</p>
+          <!-- icon -->
+          <div id="logo-img2" class="center w-full mt-1 px-2px">
+            <img src="img/icon1.png" alt="logo" class="logo-img" />
+          </div>
+        </div>
+        <p class="vtext">もくじ</p>
+      </div>
+    </section>
+    <!-- /real menu section -->
+
     <!-- hero section 100vh -->
     <section class="page-section">
       <div class="page-section-container hero flex">
@@ -28,9 +105,9 @@
         </div>
 
         <!-- 右側 -->
-        <div class="flex-1 flex flex-center">
+        <div class="flex-1 flex flex-center opacity-0">
           <div class="w-min">
-            <h1 class="vtext text-3xl tracking-logo">柳家面豆腐</h1>
+            <p class="vtext text-4xl tracking-logo">柳家面豆腐</p>
             <div class="center w-full mt-2">
               <img src="img/icon1.png" alt="logo" class="w-full h-auto" />
             </div>
@@ -41,12 +118,44 @@
     <!-- /hero section -->
 
     <section class="w-full flex flex-vertical gap-16 mt-36">
-      <!-- 1 -->
+      <!-- 0 -->
       <div class="w-full h-screen flex flex-center">
-        <div class="w-full flex h-70vh">
+        <div class="w-full flex h-7_10">
           <!-- img -->
-          <div class="w-3_5 h-full relative">
+          <div id="top-section-0" class="opacity-0 h-full relative">
             <img src="img/bg1.jpeg" alt="bg" class="img-cover test" />
+          </div>
+
+          <!-- 文字 -->
+          <div class="w-2_5 flex h-full">
+            <div class="flex-1"></div>
+
+            <div class="flex flex-center h-full">
+              <div
+                class="flex gap-10 items-start w-min row-reverse justify-start h-4_5"
+              >
+                <p class="vtext no-wrap text-3xl tracking-logo text-left mb-0">
+                  面が揃い、角が立つ。
+                </p>
+                <p
+                  class="vtext text-lg tracking-logo text-left description-behaivor max-h-full w-auto"
+                >
+                  京都は宇治野ながら区のmンあのコア物rヴ和えth含意パエrvの案　にあｋんヴぉじゃｐｒｍｖぱｐｒｖｖ。
+                </p>
+              </div>
+            </div>
+
+            <div class="flex-1"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 1 -->
+      <div class="w-full h-screen flex center">
+        <div class="w-full flex row-reverse h-7_10">
+          <!-- img -->
+          <div id="top-section-1" class="opacity-0 w-3_5 h-full relative">
+            <img src="img/bg2.jpeg" alt="bg" class="img-cover" />
           </div>
 
           <!-- 文字 -->
@@ -75,9 +184,127 @@
 
       <!-- 2 -->
       <div class="w-full h-screen flex center">
-        <div class="w-full flex row-reverse h-70vh">
+        <div class="w-full relative">
+          <!-- bg img -->
+          <div class="top-0 left-0 absolute w-full h-full bg-img3"></div>
+          <!-- 文字 -->
+          <div id="top-section-2" class="opacity-0 relative py-20 z-1">
+            <div class="flex flex-center">
+              <div
+                class="text-3xl flex gap-10 items-start w-min row-reverse justify-start"
+              >
+                <p class="vtext no-wrap tracking-logo text-left mb-0">
+                  そして、
+                </p>
+                <p class="vtext no-wrap tracking-logo text-left mb-0">
+                  二百年目にして
+                </p>
+                <p class="vtext no-wrap tracking-logo text-left mb-0">
+                  たどり着いた
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <!-- <div class="w-full h-70vh flex flex-center">
+        <p class="vtext text-3xl no-wrap tracking-logo">面豆腐の新境地</p>
+      </div> -->
+    </section>
+
+    <!-- sticky container -->
+    <section id="this-container">
+      <!-- stickyのwrapper -->
+      <div id="this">
+        <!-- relative用のcontainer -->
+        <div class="this-inner-container">
+          <!-- 0個目セクション -->
+          <div id="sec0" class="section center">
+            <div class="centertop text-large">
+              <p class="vtext text-3xl no-wrap tracking-logo">面豆腐の新境地</p>
+            </div>
+          </div>
+
+          <!-- １個目セクション -->
+          <div id="sec1" class="section center">
+            <div class="centertop text-large">
+              <p class="vtext text-3xl no-wrap tracking-logo">
+                もはや他の食材たち
+              </p>
+              <p class="vtext text-3xl no-wrap tracking-logo">
+                面豆腐のみから創られた
+              </p>
+            </div>
+          </div>
+
+          <!-- 2個目セクション -->
+          <div id="sec2" class="section center">
+            <div class="centertop text-large">
+              <p class="vtext">ステーキ面豆腐</p>
+              <p class="vtext">炒飯面豆腐</p>
+              <p class="vtext">ラーメン面豆腐</p>
+              <p class="vtext">蒲焼き面豆腐</p>
+            </div>
+          </div>
+
+          <!-- 3個目セクション -->
+          <div id="sec3" class="section menu-div center">
+            <div class="menu-item">
+              <img
+                src="img\food0.jpeg"
+                alt="Image"
+                class="object-cover h-full w-auto max-w-full"
+              />
+              <!-- menu札 -->
+              <div class="menu-title absolute center">
+                <p class="vtext text-2xl">ステーキ面豆腐</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full flex flex-vertical gap-16 mt-36">
+      <!-- 0 -->
+      <div class="w-full h-screen flex flex-center">
+        <div class="w-full flex h-7_10">
           <!-- img -->
-          <div class="w-3_5 h-full relative">
+          <div id="top-section-0" class="opacity-0 h-full relative">
+            <img src="img/bg1.jpeg" alt="bg" class="img-cover test" />
+          </div>
+
+          <!-- 文字 -->
+          <div class="w-2_5 flex h-full">
+            <div class="flex-1"></div>
+
+            <div class="flex flex-center h-full">
+              <div
+                class="flex gap-10 items-start w-min row-reverse justify-start h-4_5"
+              >
+                <p class="vtext no-wrap text-3xl tracking-logo text-left mb-0">
+                  面が揃い、角が立つ。
+                </p>
+                <p
+                  class="vtext text-lg tracking-logo text-left description-behaivor max-h-full w-auto"
+                >
+                  京都は宇治野ながら区のmンあのコア物rヴ和えth含意パエrvの案　にあｋんヴぉじゃｐｒｍｖぱｐｒｖｖ。
+                </p>
+              </div>
+            </div>
+
+            <div class="flex-1"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 1 -->
+      <div class="w-full h-screen flex center">
+        <div class="w-full flex row-reverse h-7_10">
+          <!-- img -->
+          <div id="top-section-1" class="opacity-0 w-3_5 h-full relative">
             <img src="img/bg2.jpeg" alt="bg" class="img-cover" />
           </div>
 
@@ -105,11 +332,13 @@
         </div>
       </div>
 
-      <!-- 3 -->
+      <!-- 2 -->
       <div class="w-full h-screen flex center">
-        <div class="w-full bg-img3">
+        <div class="w-full relative">
+          <!-- bg img -->
+          <div class="top-0 left-0 absolute w-full h-full bg-img3"></div>
           <!-- 文字 -->
-          <div class="flex center py-20 z-2">
+          <div id="top-section-2" class="opacity-0 relative py-20 z-1">
             <div class="flex flex-center">
               <div
                 class="text-3xl flex gap-10 items-start w-min row-reverse justify-start"
@@ -129,75 +358,11 @@
         </div>
       </div>
 
-      <!-- 4 -->
+      <!-- 3 -->
       <div class="w-full h-70vh flex flex-center">
         <p class="vtext text-3xl no-wrap tracking-logo">面豆腐の新境地</p>
-   
-    </section>
-
-    
-
-    <!-- sticky container -->
-    <section id="this-container">
-      <!-- stickyのwrapper -->
-      <div id="this">
-        <!-- relative用のcontainer -->
-        <div class="this-inner-container">
-          <!-- 0個目セクション -->
-          <div id="sec0" class="section center">
-            <div class="centertop text-large">
-              <p class="vtext text-3xl no-wrap tracking-logo">もはや他の食材たち</p>
-              <p class="vtext text-3xl no-wrap tracking-logo">面豆腐のみから創られた</p>
-            </div>
-          </div>
-
-          <!-- 1個目セクション -->
-          <div id="sec1" class="section center">
-            <div class="centertop text-large">
-              <p class="vtext">ステーキ面豆腐</p>
-              <p class="vtext">炒飯面豆腐</p>
-              <p class="vtext">ラーメン面豆腐</p>
-              <p class="vtext">蒲焼き面豆腐</p>
-            </div>
-          </div>
-
-          <!-- 2個目セクション -->
-          <div id="sec2" class="section menu-div center">
-            <div class="menu-item">
-              <img
-                src="img\food0.jpeg"
-                alt="Image"
-                class="object-cover h-full w-auto max-w-full"
-              />
-              <!-- menu札 -->
-              <div class="menu-title absolute center">
-                <p class="vtext">面豆腐ステーキ</p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
-
-    <div class="box">55555555</div>
-    <div class="box">6</div>
-    <div class="box">7</div>
-    <div class="box">8</div>
-    <div class="box">9</div>
-    <div class="box">6</div>
-    <div class="box">7</div>
-    <div class="box">8</div>
-    <div class="box">9</div>
-    <div class="box">5</div>
-    <div class="box">6</div>
-    <div class="box">7</div>
-    <div class="box">8</div>
-    <div class="box">9</div>
-    <div class="box">6</div>
-    <div class="box">7</div>
-    <div class="box">8</div>
-    <div class="box">9</div>
-
     <script src="js/index.js"></script>
   </body>
 </html>
