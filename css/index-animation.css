@@ -2,6 +2,8 @@
   --fadeDistance: 7px;
   --fadeDuration: 1.2s;
   --fadeBezi: cubic-bezier(0.58, 0.05, 0.5, 0.89);
+  --text-anm-duration: 0.2s;
+  --text11-length: 5;
 }
 
 .fadein-2right {
@@ -155,5 +157,116 @@
   0% {
     transform: translateX(20px);
     opacity: 0;
+  }
+}
+
+#text11 span {
+  /* ここからアニメーション関係 */
+  opacity: 0;
+  animation: textanimation 1s forwards;
+}
+/* 1文字目 */
+#text11 span:nth-child(1) {
+  animation-delay: calc(1 * var(--text-anm-duration));
+}
+/* 2文字目 */
+#text11 span:nth-child(2) {
+  animation-delay: calc(2 * var(--text-anm-duration));
+}
+/* 3文字目 */
+#text11 span:nth-child(3) {
+  animation-delay: calc(3 * var(--text-anm-duration));
+}
+/* 4文字目 */
+#text11 span:nth-child(4) {
+  animation-delay: calc(4 * var(--text-anm-duration));
+}
+/* 5文字目 */
+#text11 span:nth-child(5) {
+  animation-delay: calc(5 * var(--text-anm-duration));
+}
+/* 6文字目 */
+#text11 span:nth-child(6) {
+  animation-delay: calc(6 * var(--text-anm-duration));
+}
+/* 7文字目 */
+#text11 span:nth-child(7) {
+  animation-delay: calc(7 * var(--text-anm-duration));
+}
+/* 8文字目 */
+#text11 span:nth-child(8) {
+  animation-delay: calc(8 * var(--text-anm-duration));
+}
+/* 9文字目 */
+#text11 span:nth-child(9) {
+  animation-delay: calc(9 * var(--text-anm-duration));
+}
+/* 10文字目 */
+#text11 span:nth-child(10) {
+  animation-delay: calc(10 * var(--text-anm-duration));
+}
+/* 11文字目 */
+#text11 span:nth-child(11) {
+  animation-delay: calc(11 * var(--text-anm-duration));
+}
+/* 12文字目 */
+#text11 span:nth-child(12) {
+  animation-delay: calc(12 * var(--text-anm-duration));
+}
+
+#text22 span {
+  /* ここからアニメーション関係 */
+  opacity: 0;
+  animation: textanimation 1s forwards;
+}
+/* 1文字目 */
+
+/* 1文字目 */
+#text22 span:nth-child(1) {
+  animation-delay: calc((1 + var(--text11-length)) * var(--text-anm-duration));
+}
+#text22 span:nth-child(2) {
+  animation-delay: calc((2 + var(--text11-length)) * var(--text-anm-duration));
+}
+#text22 span:nth-child(3) {
+  animation-delay: calc((3 + var(--text11-length)) * var(--text-anm-duration));
+}
+#text22 span:nth-child(4) {
+  animation-delay: calc((4 + var(--text11-length)) * var(--text-anm-duration));
+}
+#text22 span:nth-child(5) {
+  animation-delay: calc((5 + var(--text11-length)) * var(--text-anm-duration));
+}
+#text22 span:nth-child(6) {
+  animation-delay: calc((6 + var(--text11-length)) * var(--text-anm-duration));
+}
+#text22 span:nth-child(7) {
+  animation-delay: calc((7 + var(--text11-length)) * var(--text-anm-duration));
+}
+#text22 span:nth-child(8) {
+  animation-delay: calc((8 + var(--text11-length)) * var(--text-anm-duration));
+}
+#text22 span:nth-child(9) {
+  animation-delay: calc((9 + var(--text11-length)) * var(--text-anm-duration));
+}
+#text22 span:nth-child(10) {
+  animation-delay: calc((10 + var(--text11-length)) * var(--text-anm-duration));
+}
+#text22 span:nth-child(11) {
+  animation-delay: calc((11 + var(--text11-length)) * var(--text-anm-duration));
+}
+#text22 span:nth-child(12) {
+  animation-delay: calc((12 + var(--text11-length)) * var(--text-anm-duration));
+}
+
+@keyframes textanimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-1em);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

@@ -200,7 +200,7 @@ body {
 }
 
 .menu-title {
-  background-color: white;
+  background-color: rgb(208, 208, 208);
   color: black;
   padding: 30px 20px;
 }
@@ -222,4 +222,12 @@ body {
   width: 100%; /* 幅は自動調整して比率を保つ */
   object-fit: cover;
   object-position: center;
+}
+
+.header {
+  margin: 0;
+}
+
+.logotest {
+  background-color: aqua;
 }

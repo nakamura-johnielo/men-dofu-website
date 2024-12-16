@@ -3476,7 +3476,17 @@
 .px-1 {
   padding-inline: 0.25rem;
 }
+.px-4 {
+  padding-inline: 1rem;
+}
+.pl-24 {
+  padding-left: 21rem;
+}
 
 .px-2px {
   padding-inline: 0.125rem; /* 2px */
+}
+
+.hidden {
+  visibility: hidden;
 }
